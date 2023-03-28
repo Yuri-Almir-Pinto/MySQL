@@ -1,0 +1,61 @@
+| a)
+
+	- Entidades:Inquilino, Corretor, Imóvel, Aluguel, Propietário.
+
+	Um corretor atende nenhum ou multiplos inquilinos.
+	Um corretor atende nenhum ou multiplos proprietarios.
+	Um proprietário é atendido por um ou multiplos corretores.
+	Um proprietário possui um ou multiplos imóveis.
+	Um inquilino é atendido por um corretor.
+	Um inquilino aluga um imóvel.
+	Um imóvel possui um proprietário.
+	Um imóvel possui nenhum ou um inquilino.
+	Um aluguel é uma relação ternária entre a relação do inquilino e do imóvel.
+
+	- Atributos:
+
+	Inquilino: CodInq, Nome.
+	Corretor: CodCorr, Nome.
+	Proprietário: CodProp, Nome.
+	Imóvel: Codimov, Descrição, CodProp, valorAlug, Alugado.
+	Aluguel: CodAlug, CodInq, DataAlug, DataVenc, Valor Alug, CodImov, CodCorr.
+
+| b)
+
+	- Entidades: cidade, Bairro, Posto, Bandeira, Pessoa, Combustível, Preço, Veículo, Usuário, Tipo__Usuário.
+
+	Uma cidade possui nenhum ou multiplos bairros.
+	Um bairro existe em uma cidade.
+	Em um bairro, reside nenhuma ou multiplas pessoas.
+	Em um bairro, localiza-se nenhum ou multiplos postos.
+	Uma pessoa é autenticada por um usuario.
+	Uma pessoa comenta em nenhum ou multiplos postos.
+	Uma pessoa é proprietária de nenhum ou multiplos veículos.
+	Uma pessoa reside em um bairro.
+	Um usuário autentica nenhuma ou multiplas pessoas.
+	Um usuário pertence a nenhum ou um tipo de usuário.
+	Um tipo de usuário é pertencido por nenhum ou multiplos usuários.
+	Um veículo tem um proprietário.
+	Um veículo é abastecido com nenhum ou multiplos combustíveis.
+	Um combustível abastece nenhum ou multiplos veículos.
+	Um combustível está disponível em nenhum ou multiplos postos.
+	Um posto está localizado nenhum ou um bairro.
+	Um posto é comentado por nenhum ou multiplas pessoas.
+	Um posto é fornecido por nenhuma ou uma bandeira.
+	O fornecimento de combustível é uma venda com nenhum ou multiplos preços
+	O fornecimento de um combustível possui um preço.
+	Uma bandeira fornece a nenhum ou multiplos postos
+
+	- Atributos: 
+
+	Cidade: nome, estado, latitude, longitude.
+	Bairro: nome.
+	Pessoa: endereco, nome, login.
+	Usuario: login, senha.
+	Tipo_Usuario: nome.
+	Veiculo: placa, marca, modelo.
+	Combustivel: nome
+	Posto: cnpj, razao_social, nome_fantasia, latitude, longitude, endereco, telefone.
+	Bandeira: nome, url
+	preco: valor, momento
+	<comentario>: momento
