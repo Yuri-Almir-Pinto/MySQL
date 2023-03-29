@@ -1,0 +1,1 @@
+Para abrir os arquivos, deve-se usar um programa chamado "brModelo", usado para criar o modelo conceitual e lógico principalmente de bancos de dados.

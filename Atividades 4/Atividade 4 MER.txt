@@ -1,0 +1,21 @@
+CNH (
+Int: N.Registro (Chave Primária),
+String: Nome,
+String: Doc.Identidade,
+String: Org. Emissor,
+String: UF,
+String: CPF,
+Date: DataDeNascimento,
+String: Permissão,
+String: ACC,
+Char: Cat. Hab,
+Date: Validade,
+Date: Prim. Hab,
+String: Pai,
+String: Mãe
+)
+
+Observações (
+Int: N.Registro (Chave Estrangeira),
+String: Observacoes
+)
